@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+  font-family: "kalame";
+  font-weight: 500;
+  font-display: swap;
+  src: url('../../assets/fonts/Kalameh-Medium.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: "kalame";
+  font-weight: 300;
+  font-display: swap;
+  src: url('../../assets/fonts/Kalameh-Light.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: "kalame";
+  font-weight: 800;
+  font-display: swap;
+  src: url('../../assets/fonts/Kalameh-Black.ttf') format('truetype'),
+}
+
+@font-face {
+  font-family: "kenar";
+  font-weight: 800;
+  font-display: swap;
+  src: url('../../assets/fonts/Kenaar\ Heavy.ttf') format('truetype'),
+}
+
+*,
+h1 {
+  font-family: "kalame" !important;
+}
+
+.kenar {
+  font-family: "kenar" !important;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background-color: #dee2e6a1 !important;
+
+}
+
+section {
+  min-height: 100px;
+  max-width: 480px;
+  width: 100%;
+  background: white;
+  height: 100vh;
+  position: relative;
+
+}
+
+.ant-btn-primary {
+  @apply !bg-primary hover:!bg-orange-400
+}
+
+.ant-input-filled:hover {
+  @apply !border-primary
+}
+
+.ant-btn-default:not(:disabled):not(.ant-btn-disabled):hover {
+  @apply !border-primary text-primary
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
